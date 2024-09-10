@@ -17,6 +17,11 @@ p {
     padding: 0 30px;
 }
 
+.feature-detail p,
+.feature-detail h2 {
+    padding: 0;
+}
+
 h1 {
     font-size: 1.8rem;
     padding: 0 30px;
@@ -123,7 +128,7 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 20px;
+    padding: 0 auto;
 }
 
 /* ここまでナビゲーションメニュー（ハンバーガーメニュー） */
@@ -136,7 +141,7 @@ main {
     writing-mode: vertical-rl;
     position: absolute;
     color: #fff;
-    font-size: 2rem;
+    font-size: clamp(1.8rem, calc(2.3vw + 1.5rem), 3.2rem);
     text-shadow: #2e2e2e 2px 1px;
     bottom: 10%;
     left: 0px;
@@ -275,7 +280,7 @@ main {
 /* 商品ラインナップ */
 
 .logo_products {
-    translate: 0 95px;
+    translate: 0 90px;
     z-index: -1;
     position: relative;
 }
@@ -634,7 +639,7 @@ main {
     list-style-type: none;
     column-count: 2;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 13px;
 
 }
 
@@ -696,6 +701,7 @@ main {
 /* PC表示用のメディアクエリ */
 @media screen and (min-width: 1024px) {
 
+
     .main-title {
         font-size: 2.5rem;
     }
@@ -706,7 +712,8 @@ main {
         flex-direction: row;
         width: 750px;
         box-shadow: #c9c9c9 0px 0px 10px;
-        margin: 0 10px 0 0;
+        margin: 0;
+        padding: 0;
     }
 
     nav {
@@ -738,8 +745,9 @@ main {
         display: -webkit-flex;
         display: flex;
     }
-#menu {
-    width: 60%;
-}
+
+    #menu {
+        width: 60%;
+    }
 
 }
