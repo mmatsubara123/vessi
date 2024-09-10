@@ -141,7 +141,7 @@ main {
     writing-mode: vertical-rl;
     position: absolute;
     color: #fff;
-    font-size: clamp(1.8rem, calc(2.3vw + 1.5rem), 3.2rem);
+    font-size: 6vw;
     text-shadow: #2e2e2e 2px 1px;
     bottom: 10%;
     left: 0px;
@@ -151,7 +151,7 @@ main {
 .scroll {
     writing-mode: vertical-rl;
     display: block;
-    font-size: 1.2rem;
+    font-size: 2vmax;
     top: 800px;
     left: 0;
     margin: 0 auto;
