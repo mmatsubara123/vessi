@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vessi</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="pc-bg">
+
+        <img src="img/Logo_white.svg" alt="">
+
+    </div>
+
+
+
+
+
+    <div class="flex">
+        <div class="sp-nav-container">
+            <header>
+                <div class="header-left"></div>
+                <div class="header-center">
+                    <img src="img/Logo_white.svg" alt="ロゴ" class="logo">
+                </div>
+                <div class="header-right">
+                    <div class="menu-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Founder</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <script>
+                function toggleMenu() {
+                    var menu = document.getElementById("menu");
+                    menu.classList.toggle("open");
+                    document.querySelector('.sp-nav-container').classList.toggle('open');
+                }
+            </script>
+        </div>
+        <main class="container">
+            <!-- メインビジュアル -->
+            <div class="mv">
+                <p class="scroll">scroll<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        viewBox="0 0 256 256">
+                        <path fill="currentColor"
+                            d="m205.66 149.66l-72 72a8 8 0 0 1-11.32 0l-72-72A8 8 0 0 1 56 136h64V40a8 8 0 0 1 16 0v96h64a8 8 0 0 1 5.66 13.66" />
+                    </svg>
+                </p>
+                <div class="mv-box">
+                    <video class="mv-video" src="/img/vessi_top_movie.mp4" autoplay muted playsinline loop></video>
+                    <h1 class="main-title">雨の日も晴れの日も快適！<br>
+                        まるで魔法のようなスニーカー
+                    </h1>
+                </div>
+            </div>
+
+
+            <!-- シューズについて -->
+
+            <div class="about">
+
+                <div><img class="logo_about logo-title" src="/img/about_top.png" alt=""></div>
+                <h1 class="title">Vessiシューズについて</h1>
+
+                <section class="about_shoes">
+
+                    <h2>毎日、いつでもどこでも<br>使えるスニーカー。</h2>
+                    <p>雨。雪。ぬかるみ。泥。日常。
+                        <br><br>
+                        用途に合わせて靴をあれこれ用意する時代は終わりです。
+                        <br><br>
+                        スニーカー１つで全ての用途に<br>
+                        対応するなんて不可能？
+                        <br><br>
+                        私たちは一日中、毎日、どんな天候でも<br>
+                        履ける靴を作りました。
+                        <br><br>
+                        雪の中、雨の中、太陽の下、<br>
+                        そしてシャワーでも履けるスニーカー。
+                        <br><br>
+                        それが「今」の時代のスニーカーである<br>
+                        と考えます。
+                    </p>
+
+                </section>
+                <img src="img/about_btm.png" alt="shoes" class="about_btm">
+            </div>
+
+            <div class="founders">
+                <img src="img/title_FOUNDERS.png" alt="logo_founder" class="logo_founder">
+                <h1 class="title_founder">私たちが創りました</h1>
+                <p>海外のクラウドファンディングKICKSTARTER からスタートしたプロジェクトで、カナダに本拠地を置くVessi社は、一つの疑問から始まりました。<br><br>
+                    それは「防水、通気性、軽量…すべての要望を満たす靴は作れるのか？」という疑問です。<br><br>
+                    勿論、それは簡単に答えが出せる問いではありません。私たちにとって製品はそれらを満たしつつエコフレンドリーである必要がありました。<br><br>
+                    そして数千キロの旅を経たのちに――Vessi（ヴェッシー）は誕生しました。</p>
+                <img src="img/founder.png" alt="" class="pic_founder">
+                <p>水を弾き、驚くほど軽く、通気性にも優れたこのスニーカーは履いていることを忘れるほどに軽く、水溜りを踏んでも何の問題もありません。<br><br>
+                    新世代のスニーカーの誕生をぜひ皆さん自身でご体験ください。</p>
+            </div>
+
+            <div class="features">
+                <img src="img/features_top.png" alt="logo_features" class="logo_features logo-title">
+                <h1 class="title">製品の特徴</h1>
+
+                <section class="feature-container">
+
+                    <div class="feature-detail">
+                        <div><img src="img/icon_waterproof.png" alt="waterproof" class="features_icon"></div>
+                        <div>
+                            <h2> 100%防水</h2>
+                            <p class="waterproof">
+                                当社の Dyma-tex® テクノロジにより、水の浸入を防ぎ通気性を保ちます。
+                                雪もぬかるみも泥も平気です。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="feature-detail">
+
+                        <div>
+                            <h2> 快適な履き心地</h2>
+                            <p class="confortable">
+                                防水性に優れているだけではありません。
+                                雲の上を歩いているような履き心地のよさも魅力です。
+                                靴を脱ぎたくなくなるかも。。
+                            </p>
+                        </div>
+                        <div><img src="img/icon_cotton.png" alt="confortable" class="features_icon_2"></div>
+                    </div>
+
+                    <div class="feature-detail">
+                        <div><img src="img/icon_wing.png" alt="lightweight" class="features_icon"></div>
+                        <div>
+                            <h2> 軽量</h2>
+                            <p class="lightweight">
+                                ごつくてダサいレインブーツに別れを告げましょう。
+                                Vessi は非常に軽量なので、履いていることを忘れてしまうほどです。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-detail">
+
+                        <div>
+                            <h2>ビーガン素材</h2>
+                            <p class="vegan">
+                                私たちの商品は、動物性製品を一切使用していないことをお約束します。
+                            </p>
+                        </div>
+                        <div><img src="img/icon_leaf.png" alt="vegan" class="features_icon_2"></div>
+                    </div>
+
+
+                </section>
+
+            </div>
+            <div><img src="/img/features_btm.png" alt="" class="img_btm"></div>
+
+
+            <div class="technology">
+                <img src="img/title_TECHNOLOGY.png" alt="logo_technology" class="logo_technology">
+                <h1>素材について</h1>
+                <div><img src="img/technology.png" alt="" class="tech_detail"></div>
+
+            </div>
+
+            <div class="products">
+                <div><img src="/img/products_top.png" alt="logo-products" class="logo_products logo-title"></div>
+                <h1>商品ラインナップ</h1>
+
+                <div class="product-container">
+
+                    <div class="product-1 procuct">
+                        <h2><img src="img/icon_athletic.png" alt="" class="icon">アスレチック<br>
+                            スタイル</h2>
+                        <img src="img/athletic-style.png" alt="" class="athletic-style pic-product">
+                        <li class="style">
+                            <ul>
+                                <img src="img/check.svg" alt="check">スポーツが好き
+                            </ul>
+                            <ul><img src="img/check.svg" alt="check">アウトドアなスタイル</ul>
+                        </li>
+                        <p>外に出ていろんな活動に参加するのが好きなあなたに。ランニング、近所のバスケットボール、公園でのフリーフォームテニス、ハイキング。スポーツライフスタイルを維持できるシューズです。</p>
+                        <div class="slider-container">
+                            <div><a href="#"><img src="img/citycape-sneaker.png" alt=""></a></div>
+                            <div><a href="#"><img src="img/everyday-sneakers.png" alt=""></a></div>
+                            <div><a href="#"><img src="img/everyday-move .png" alt=""></a></div>
+                        </div>
+                    </div>
+
+                    <div class="product-2 procuct">
+                        <h2><img src="img/icon_casual.png" alt="" class="icon">カジュアル<br>
+                            スタイル</h2>
+                        <li class="style">
+                            <ul><img src="img/check.svg" alt="check">通勤にも休日にも</ul>
+                            <ul><img src="img/check.svg" alt="check">気軽に履ける</ul>
+                        </li>
+                        <p>カジュアルシューズは、さまざまな場面で活躍する、履き心地の良い定番の靴です。休日のおでかけだけではなく、通勤のときも快適に過ごせます。</p>
+                        <div class="slider-container">
+                            <div><a href="#"><img src="img/citycape-sneaker.png" alt=""></a></div>
+                            <div><a href="#"><img src="img/everyday-sneakers.png" alt=""></a></div>
+                            <div><a href="#"><img src="img/everyday-move .png" alt=""></a></div>
+                        </div>
+                    </div>
+                    <div class="product-3 procuct">
+                        <h2><img src="img/icon_weather.png" alt="" class="icon">オールテレーン<br>
+                            スタイル</h2>
+                        <li class="style">
+                            <ul><img src="img/check.svg" alt="check">ブーツよりも快適</ul>
+                            <ul><img src="img/check.svg" alt="check">どんな気候でも履ける</ul>
+                        </li>
+                        <p>どんな気候でも快適な履き心地。<br>
+                            スニーカーの通気性の良さとアウトドアブーツのグリップ・カバー力を兼ね備えています。</p>
+                        <div class="slider-container2">
+                            <div><a href="#"><img src="img/citycape-sneaker.png" alt=""></a></div>
+                            <div><a href="#"><img src="img/everyday-sneakers.png" alt=""></a></div>
+
+                        </div>
+                    </div>
+                    <a href="https://vessi.com/" class="btn">
+                        オンラインショップ
+                    </a>
+
+                </div>
+                <img src="img/procucts_btm.png" alt="" class="procucts_btm img_btm">
+            </div>
+
+            <div class="review">
+                <div><img src="img/review_top.png" alt="" class="logo_review logo-title"></div>
+                <h1>商品レビュー</h1>
+
+                <section class="review-section">
+
+                    <ul>
+                        <li>
+                            <img class="user" src="img/review_sample.png" alt="" />
+                            <div class="review-area">
+                                <p class="name">Chaki'n Hinaさん</p>
+                                <p class="star3"></p>
+                                <p class="comment">
+                                    写真よりも実物の方が可愛らしく、とても気に入りました。自分のサイズ選びが宜しくなかったようで少し小さかったですが、きつくて履けないレベルではなかったです。色違いの購入も検討したいです。
+                                </p>
+                                <p class="date">2023年06月03日</p>
+                            </div>
+                            <!-- <a href="#" class="more">show more</a> -->
+                        </li>
+                        <li>
+                            <img class="user" src="img/review_sample.png" alt="" />
+                            <div class="review-area">
+                                <p class="name">購入者さん</p>
+                                <p class="star4-5"></p>
+                                <p class="comment">
+                                    165cmMサイズを購入しました。少しオーバーサイズですが、生地もしっかりしていて、とても着やすくお気に入りです♪スキニーパンツやロングスカート、何にでも合わせやすく、これからの季節重宝しそうです(^^)
+                                </p>
+                                <p class="date">2023年06月03日</p>
+                            </div>
+                            <!-- <a href="#" class="more">show more</a> -->
+                        </li>
+                        <li>
+                            <img class="user" src="img/review_sample.png" alt="" />
+                            <div class="review-area">
+                                <p class="name">購入者さん</p>
+                                <p class="star4-5"></p>
+                                <p class="comment">
+                                    165cmMサイズを購入しました。少しオーバーサイズですが、生地もしっかりしていて、とても着やすくお気に入りです♪スキニーパンツやロングスカート、何にでも合わせやすく、これからの季節重宝しそうです(^^)
+                                </p>
+                                <p class="date">2023年06月03日</p>
+                            </div>
+                            <!-- <a href="#" class="more">show more</a> -->
+                        </li>
+                    </ul>
+                    <a href="https://vessi.com/" class="btn">
+                        その他のレビューを見る
+                    </a>
+
+                </section>
+                <img src="img/review_btm.png" alt="" class="review_btm img_btm">
+
+
+
+            </div>
+
+            <div class="accordion">
+                <div class="logo_faq"><img src="img/title_FAQ.png" alt="faq"></div>
+                <h1>よくある質問</h1>
+                <div class="faq-container">
+                    <div class="faq">
+                        <input type="checkbox" id="faq01" class="toggle">
+                        <label class="question" for="faq01">本当に100%防水ですか？</label>
+                        <div class="answer">
+                            <div>はい。でもコーティングではありません。<br>
+                                私たちは、汗と熱を逃がす一体型の層を備えた特許取得済みのニット素材を開発しました。<br>
+                                これにより、通気性は維持しつつ、同時にあらゆる外的要素を遮断します。水たまりも平気です。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <input type="checkbox" id="faq02" class="toggle">
+                        <label class="question" for="faq02">環境に優しいですか？</label>
+                        <div class="answer">
+                            <div>当社の製品はすべてビーガンであり、水と材料の廃棄物を削減する方法で作られています。<br>
+                                当社の特許取得済みの防水技術である Dyma-tex® は、有害な化学物質や一時的なコーティングを使用せずに作られています。</div>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <input type="checkbox" id="faq03" class="toggle">
+                        <label class="question" for="faq03">旅行に適していますか？</label>
+                        <div class="answer">
+                            <div>もちろんです。<br>Vessi は、世界中を旅する冒険に最適なトラベルシューズです。<br>
+                                非常に軽量で快適な履き心地で、スタイリングも簡単です。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <input type="checkbox" id="faq04" class="toggle">
+                        <label class="question" for="faq04">Vessiはビーガンですか？</label>
+                        <div class="answer">
+                            <div>Vessi は 100%ビーガンで、動物由来の原材料は一切含まれていません 。<br>
+                                接着剤には水性接着剤を使用し、人工の革とスエードを使用しています。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <input type="checkbox" id="faq05" class="toggle">
+                        <label class="question" for="faq05">保証について教えてください</label>
+                        <div class="answer">
+                            <div>365日のメーカー保証がついています。<br>
+                                保証には条件があるため、詳しくはこちらからご確認ください。<br>
+                                サイズが合わない場合、90日以内にメールでご連絡いただければ、無償で交換の手続きが可能です。
+                            </div>
+                        </div>
+                    </div>
+                    <p>ご質問は
+                        <a href="https://vessi.com/pages/contact" class="link-cs">カスタマーサービス<img
+                                src="img/open_orange.svg" alt="open"></a>
+                        まで<br>
+                        お気軽にお問い合わせください
+                    </p>
+                </div>
+
+
+            </div>
+
+        </main>
+</body>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <ul class="footer-nav">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">FOUNDER</a></li>
+            <li><a href="#">FEATURE</a></li>
+            <li><a href="#">TECHNOLOGY</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <p class="copyright"><small>&copy; 2024 Vessi Footwear Ltd. All Rights Reserved.</small></p>
+</footer>
+
+</html>
